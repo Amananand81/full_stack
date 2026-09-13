@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>    
+</body>
+<script>
+
+    // this function is traveresing agauin ad again.it s not a optimal solution cause of .innerHTML
+    function addelement(additem){
+        const i = document.createElement('li')
+        i.innerHTML=additem 
+        document.querySelector('.language').appendChild(i)
+
+    }
+    addelement("python")
+    addelement("java")
+
+    //optimized solution
+     function addelement(additem){
+       const i =  document.createElement('li')
+       i.appendChild(document.createTextNode(additem))
+       document.querySelector('.language').appendChild(i)
+     }
+     addelement('html')
+     addelement('css')
+
+     // Edit....
+
+     const items=document.querySelector("li:nth-child(2)")
+     items.innerHTML="mojo"
+
+     const removeItems=document.querySelector("li:first-child")
+     removeItems.remove()
+     const removeItems2=document.querySelector("li:last-child")
+     removeItems2.remove()
+</script>
+</html>
