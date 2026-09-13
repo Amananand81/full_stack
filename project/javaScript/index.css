@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    color:white;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.button{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding:30px;
+    font-size: larger;
+}
+#grey{
+    background-color: grey;
+}
+#red{
+    background-color: red;
+}
+#darkgreen{
+    background-color: darkgreen
+}
+#blue{
+    background-color: blue;
+}
+#darkcyan{
+    background-color: darkcyan;
+}
+
+.message{
+    text-align: center;
+    margin-top:30px ;
+    font-size: xx-large;
+}
